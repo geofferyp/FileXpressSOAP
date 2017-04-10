@@ -1,0 +1,32 @@
+c:\users\geoffp\documents\visual studio 2010\Projects\FileXpressSOAP\FileXpressSOAP\bin\Debug\FileXpressSOAP.exe.config
+c:\users\geoffp\documents\visual studio 2010\Projects\FileXpressSOAP\FileXpressSOAP\bin\Debug\FileXpressSOAP.exe
+c:\users\geoffp\documents\visual studio 2010\Projects\FileXpressSOAP\FileXpressSOAP\bin\Debug\FileXpressSOAP.pdb
+c:\users\geoffp\documents\visual studio 2010\Projects\FileXpressSOAP\FileXpressSOAP\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\geoffp\documents\visual studio 2010\Projects\FileXpressSOAP\FileXpressSOAP\obj\x86\Debug\FileXpressSOAP.Form1.resources
+c:\users\geoffp\documents\visual studio 2010\Projects\FileXpressSOAP\FileXpressSOAP\obj\x86\Debug\FileXpressSOAP.Properties.Resources.resources
+c:\users\geoffp\documents\visual studio 2010\Projects\FileXpressSOAP\FileXpressSOAP\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\geoffp\documents\visual studio 2010\Projects\FileXpressSOAP\FileXpressSOAP\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\geoffp\documents\visual studio 2010\Projects\FileXpressSOAP\FileXpressSOAP\obj\x86\Debug\FileXpressSOAP.exe
+c:\users\geoffp\documents\visual studio 2010\Projects\FileXpressSOAP\FileXpressSOAP\obj\x86\Debug\FileXpressSOAP.pdb
+C:\Users\geoffp\Documents\Visual Studio 2010\Projects\FileXpressSOAP2\FileXpressSOAP\bin\Debug\FileXpressSOAP.exe.config
+C:\Users\geoffp\Documents\Visual Studio 2010\Projects\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\FileXpressSOAP.exe
+C:\Users\geoffp\Documents\Visual Studio 2010\Projects\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\FileXpressSOAP.pdb
+C:\Users\geoffp\Documents\Visual Studio 2010\Projects\FileXpressSOAP2\FileXpressSOAP\bin\Debug\FileXpressSOAP.exe
+C:\Users\geoffp\Documents\Visual Studio 2010\Projects\FileXpressSOAP2\FileXpressSOAP\bin\Debug\FileXpressSOAP.pdb
+C:\Users\geoffp\Documents\Visual Studio 2010\Projects\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\geoffp\Documents\Visual Studio 2010\Projects\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\FileXpressSOAP.Properties.Resources.resources
+C:\Users\geoffp\Documents\Visual Studio 2010\Projects\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\geoffp\Documents\Visual Studio 2010\Projects\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\geoffp\Documents\Visual Studio 2010\Projects\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\FileXpressSOAP.SOAPDemo.resources
+C:\Users\geoffp\Documents\Visual Studio 2010\Projects\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\FileXpressSOAP.PlatformTransfers.resources
+C:\Users\geoffp\Desktop\FileXpressSOAP2\FileXpressSOAP\bin\Debug\FileXpressSOAP.exe.config
+C:\Users\geoffp\Desktop\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\FileXpressSOAP.exe
+C:\Users\geoffp\Desktop\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\FileXpressSOAP.pdb
+C:\Users\geoffp\Desktop\FileXpressSOAP2\FileXpressSOAP\bin\Debug\FileXpressSOAP.exe
+C:\Users\geoffp\Desktop\FileXpressSOAP2\FileXpressSOAP\bin\Debug\FileXpressSOAP.pdb
+C:\Users\geoffp\Desktop\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\geoffp\Desktop\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\FileXpressSOAP.PlatformTransfers.resources
+C:\Users\geoffp\Desktop\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\FileXpressSOAP.Properties.Resources.resources
+C:\Users\geoffp\Desktop\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\FileXpressSOAP.SOAPDemo.resources
+C:\Users\geoffp\Desktop\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\geoffp\Desktop\FileXpressSOAP2\FileXpressSOAP\obj\x86\Debug\GenerateResource.write.1.tlog
