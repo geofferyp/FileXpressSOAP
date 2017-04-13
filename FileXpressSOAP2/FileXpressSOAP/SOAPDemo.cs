@@ -23,17 +23,23 @@ namespace FileXpressSOAP
         public String token;
         public FXCC.AdminServiceService admin = new FXCC.AdminServiceService();
         public FileXpressSOAP.PlatformTransfers ptForm;
-
-
-        //Pre-populate the comboBoxISTransfers with one so it looks better
+        
+        
         private void SOAPDemo_Load(object sender, EventArgs e)
         {
+            //Choose one pre-defined transfer for your demo. Comment the rest.
+
             comboBoxISTransfers.Items.Clear();
             comboBoxISTransfers.Items.Add("Download - Mortgage Application");
+            //comboBoxISTransfers.Items.Add("Inbound - Mortgage Application");
+            //comboBoxISTransfers.Items.Add("Upload to Tech Support");
+            //comboBoxISTransfers.Items.Add("One Time Download from Tech Support");
+            //comboBoxISTransfers.Items.Add("Outbound - Transaction Records");
+            //comboBoxISTransfers.SelectedItem = "Outbound - Mortgage Application";
             comboBoxISTransfers.Show(); 
         }
 
-        // Add a FileXpress Internet Server upload definition. Details from form
+
         public void addInternetUpload(String targetFolder)
         {
             try
@@ -88,7 +94,6 @@ namespace FileXpressSOAP
             }
         }
 
-        // Add a FileXpress Internet Server download definition. Details from form.
         public void addInternetDownload()
         {
             try
@@ -146,7 +151,7 @@ namespace FileXpressSOAP
         }
    
 
-        //Setup the selected transfer for the user
+
         private void cmdDefine_Click(object sender, EventArgs e)
         {
             if (txtUser.Text == "" | comboBoxISTransfers.SelectedItem == null)
@@ -178,11 +183,10 @@ namespace FileXpressSOAP
 
         private void cmdCancel_Click(object sender, EventArgs e)
         {
+            //this.ptForm.Close();
             this.Close();
         }
 
-
-        //Create the user with info from the form
         private void cmdCreate_Click(object sender, EventArgs e)
         {
             if (txtEmail.Text == "" | txtPass.Text == "" | txtUser.Text == "")
@@ -209,7 +213,7 @@ namespace FileXpressSOAP
             FXCC.User user = new FXCC.User();
 
             try
-            {   // Set user properties           
+            {              
                 user.activeUserType = true;
                 user.id = this.txtUser.Text;
                 user.password = this.txtPass.Text;
@@ -228,25 +232,13 @@ namespace FileXpressSOAP
                 user.validEndTime = ("2350");
                 user.validStartTime = ("0");
                 user.visibility = ("public");
-            //user.defaultRole = "TransferRight";
+                //user.defaultRole = "TransferRight";
 
-
-            //try
-            //Add the user and set the file transfer right
-                Boolean retval1 = admin.addUser(user, token);
-                Boolean retval2 = admin.addUserToRole(txtUser.Text, "TransferRight", token);
-                if(retval1 & retval2 == true)
-                    {
+                if (admin.addUser(user, token) && admin.addUserToRole(user.id,"TransferRight", token))
+                {
                         this.lblStatus.Text = "Successfully added user " + user.id;
                         this.cmdCreate.Enabled = false;
-                    }
-                //else
-                //    {
-                //        lblStatus.Text = "Failed to add user " + user.id;
-                //        txtEmail.Text = "";
-                //        txtPass.Text = "";
-                //        txtUser.Text = "";
-                //    }
+                }
 
             }
             catch (Exception ex)
@@ -261,8 +253,8 @@ namespace FileXpressSOAP
             //token = null;
         }
 
-        //Clears User Panel
         private void cmdClear_Click(object sender, EventArgs e)
+        //Clears User Panel
         {
             cmdCreate.Enabled = true;
             txtEmail.Text = "";
@@ -274,14 +266,15 @@ namespace FileXpressSOAP
         {
             comboBoxISTransfers.Items.Clear();
         }
-        // **** Moved to new form
-        //private void cmdBankClear_Click(object sender, EventArgs e)
-        //{
-        //    comboBoxBankTransfers.Items.Clear();
-        //}
+
+        //Stub moved to Platform Transfers
+        private void cmdBankClear_Click(object sender, EventArgs e)
+        {
+            //comboBoxBankTransfers.Items.Clear();
+        }
 
 
-        //Load the combo box with a list of FileXpress Internet Server transfers
+
         private void comboISTransfers_Click(object sender, EventArgs e)
         {
             comboBoxISTransfers.Items.Clear();
@@ -307,50 +300,16 @@ namespace FileXpressSOAP
         }
 
 
-        //***** Moved to new form             
-        //private void comboBoxBankTransfers_Click(object sender, EventArgs e)
-        //{
-        //    comboBoxBankTransfers.Items.Clear();
-        //    if (token == null)
-        //    {
-        //        admin.Url = "https://fxcc.fx.com:8443/fxcc/control?view=services/AdministratorService";
-        //        admin.Credentials = new System.Net.NetworkCredential(userID, password);
-
-        //        ServicePointManager.Expect100Continue = false;
-        //        token = admin.getSession();
-        //    }
-
-        //    FXCC.FTTransfer[] bank = admin.retrieveAllTransfersFromBank(token);
-
-        //    comboBoxBankTransfers.Enabled = true;
-        //    int count = 0;
-        //    foreach (FXCC.FTTransfer ftTransfer in bank)
-        //    {
-        //        if (bank[count] != null)
-        //        {
-
-        //            comboBoxBankTransfers.Items.Add(bank[count].description);
-        //            count++;
+        //Stub moved to PlatformTransfers
+        private void comboBoxBankTransfers_Click(object sender, EventArgs e)
+        { }
 
 
-        //        }
-        //        comboBoxBankTransfers.Visible = true;
-        //    }
+            //Stub. Moved to PlatformTransfers
+        private void cmdBankTransfer_Click(object sender, EventArgs e)
+        {
 
-                    
         }
-        //**** Moved to new Form
-        //private void cmdBankTransfer_Click(object sender, EventArgs e)
-        //{
-        //    comboBoxISTransfers.Items.Clear();
-        //    FXCC.FTTransfer[] bank = admin.retrieveAllTransfersFromBank(token);
-        //    int bankNum = comboBoxBankTransfers.SelectedIndex;
-        //    string retval = admin.submitTransferToServer(bank[bankNum], token);
-        //    //retval.Replace("\n", "\r\n");
-        //    lblStatus.Text = retval;
-        //    //lblStatus.Text = "A really long ugly message with many many many linefeeds and then more linefeeds\r\nFoobar Rules";
-        //    //comboBoxBankTransfers.
-        //}
 
         private void cmdMore_Click(object sender, EventArgs e)
         {
@@ -364,21 +323,6 @@ namespace FileXpressSOAP
         {
             this.Show();
         }
-
-
-
-
-        //private void comboBoxISTransfers_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    if ((String)comboBoxISTransfers.SelectedItem == null)
-        //    {
-        //        cmdDefine.Enabled = false;
-        //    }
-        //    else
-        //    {
-        //        cmdDefine.Enabled = true;
-        //    }
-        //}
 
         private void comboBoxISTransfers_SelectedValueChanged(object sender, EventArgs e)
         {
@@ -402,8 +346,14 @@ namespace FileXpressSOAP
 
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
 
+        }
 
- 
+        private void cmdHelp_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

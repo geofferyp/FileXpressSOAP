@@ -67,7 +67,7 @@
             this.groupBoxUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxUser.Location = new System.Drawing.Point(20, 16);
             this.groupBoxUser.Name = "groupBoxUser";
-            this.groupBoxUser.Size = new System.Drawing.Size(435, 290);
+            this.groupBoxUser.Size = new System.Drawing.Size(485, 247);
             this.groupBoxUser.TabIndex = 0;
             this.groupBoxUser.TabStop = false;
             this.groupBoxUser.Text = "Create User";
@@ -75,9 +75,9 @@
             // 
             // cmdClear
             // 
-            this.cmdClear.Location = new System.Drawing.Point(295, 229);
+            this.cmdClear.Location = new System.Drawing.Point(265, 198);
             this.cmdClear.Name = "cmdClear";
-            this.cmdClear.Size = new System.Drawing.Size(119, 34);
+            this.cmdClear.Size = new System.Drawing.Size(121, 43);
             this.cmdClear.TabIndex = 17;
             this.cmdClear.Text = "Clear";
             this.cmdClear.UseVisualStyleBackColor = true;
@@ -85,9 +85,9 @@
             // 
             // cmdCreate
             // 
-            this.cmdCreate.Location = new System.Drawing.Point(179, 229);
+            this.cmdCreate.Location = new System.Drawing.Point(181, 198);
             this.cmdCreate.Name = "cmdCreate";
-            this.cmdCreate.Size = new System.Drawing.Size(102, 34);
+            this.cmdCreate.Size = new System.Drawing.Size(88, 43);
             this.cmdCreate.TabIndex = 16;
             this.cmdCreate.Text = "OK";
             this.cmdCreate.UseVisualStyleBackColor = true;
@@ -95,15 +95,15 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(176, 151);
+            this.txtEmail.Location = new System.Drawing.Point(181, 142);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(253, 39);
+            this.txtEmail.Size = new System.Drawing.Size(205, 39);
             this.txtEmail.TabIndex = 14;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(7, 144);
+            this.lblEmail.Location = new System.Drawing.Point(-4, 145);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(101, 32);
             this.lblEmail.TabIndex = 15;
@@ -111,32 +111,33 @@
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(176, 108);
+            this.txtPass.Location = new System.Drawing.Point(181, 100);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(253, 39);
+            this.txtPass.Size = new System.Drawing.Size(205, 39);
             this.txtPass.TabIndex = 13;
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(176, 63);
+            this.txtUser.Location = new System.Drawing.Point(181, 62);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(253, 39);
+            this.txtUser.Size = new System.Drawing.Size(205, 39);
             this.txtUser.TabIndex = 10;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 108);
+            this.label2.Location = new System.Drawing.Point(-4, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(156, 32);
             this.label2.TabIndex = 12;
             this.label2.Text = "Password:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 66);
+            this.label1.Location = new System.Drawing.Point(-4, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 32);
             this.label1.TabIndex = 11;
@@ -149,9 +150,9 @@
             this.groupBoxTransfer.Controls.Add(this.comboBoxISTransfers);
             this.groupBoxTransfer.Controls.Add(this.label3);
             this.groupBoxTransfer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxTransfer.Location = new System.Drawing.Point(494, 16);
+            this.groupBoxTransfer.Location = new System.Drawing.Point(576, 16);
             this.groupBoxTransfer.Name = "groupBoxTransfer";
-            this.groupBoxTransfer.Size = new System.Drawing.Size(514, 287);
+            this.groupBoxTransfer.Size = new System.Drawing.Size(544, 372);
             this.groupBoxTransfer.TabIndex = 1;
             this.groupBoxTransfer.TabStop = false;
             this.groupBoxTransfer.Text = "Setup Transfer for this User";
@@ -159,7 +160,7 @@
             // checkBoxOneTime
             // 
             this.checkBoxOneTime.AutoSize = true;
-            this.checkBoxOneTime.Location = new System.Drawing.Point(6, 205);
+            this.checkBoxOneTime.Location = new System.Drawing.Point(10, 117);
             this.checkBoxOneTime.Name = "checkBoxOneTime";
             this.checkBoxOneTime.Size = new System.Drawing.Size(288, 36);
             this.checkBoxOneTime.TabIndex = 7;
@@ -168,9 +169,9 @@
             // 
             // cmdDefine
             // 
-            this.cmdDefine.Location = new System.Drawing.Point(372, 197);
+            this.cmdDefine.Location = new System.Drawing.Point(177, 117);
             this.cmdDefine.Name = "cmdDefine";
-            this.cmdDefine.Size = new System.Drawing.Size(98, 50);
+            this.cmdDefine.Size = new System.Drawing.Size(88, 22);
             this.cmdDefine.TabIndex = 6;
             this.cmdDefine.Text = "OK";
             this.cmdDefine.UseVisualStyleBackColor = true;
@@ -180,9 +181,9 @@
             // 
             this.comboBoxISTransfers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxISTransfers.FormattingEnabled = true;
-            this.comboBoxISTransfers.Location = new System.Drawing.Point(6, 43);
+            this.comboBoxISTransfers.Location = new System.Drawing.Point(11, 38);
             this.comboBoxISTransfers.Name = "comboBoxISTransfers";
-            this.comboBoxISTransfers.Size = new System.Drawing.Size(486, 39);
+            this.comboBoxISTransfers.Size = new System.Drawing.Size(465, 39);
             this.comboBoxISTransfers.TabIndex = 2;
             this.comboBoxISTransfers.SelectedIndexChanged += new System.EventHandler(this.comboBoxISTransfers_SelectedIndexChanged);
             this.comboBoxISTransfers.DropDownClosed += new System.EventHandler(this.comboBoxISTransfers_DropDownClosed);
@@ -201,7 +202,7 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(27, 309);
+            this.lblStatus.Location = new System.Drawing.Point(12, 292);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(111, 32);
             this.lblStatus.TabIndex = 3;
@@ -241,9 +242,9 @@
             // cmdCancel
             // 
             this.cmdCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdCancel.Location = new System.Drawing.Point(866, 392);
+            this.cmdCancel.Location = new System.Drawing.Point(939, 440);
             this.cmdCancel.Name = "cmdCancel";
-            this.cmdCancel.Size = new System.Drawing.Size(120, 40);
+            this.cmdCancel.Size = new System.Drawing.Size(181, 56);
             this.cmdCancel.TabIndex = 20;
             this.cmdCancel.Text = "Cancel";
             this.cmdCancel.UseVisualStyleBackColor = true;
@@ -252,19 +253,20 @@
             // cmdHelp
             // 
             this.cmdHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdHelp.Location = new System.Drawing.Point(580, 392);
+            this.cmdHelp.Location = new System.Drawing.Point(587, 440);
             this.cmdHelp.Name = "cmdHelp";
-            this.cmdHelp.Size = new System.Drawing.Size(150, 39);
+            this.cmdHelp.Size = new System.Drawing.Size(181, 56);
             this.cmdHelp.TabIndex = 19;
             this.cmdHelp.Text = "Help";
             this.cmdHelp.UseVisualStyleBackColor = true;
+            this.cmdHelp.Click += new System.EventHandler(this.cmdHelp_Click);
             // 
             // cmdMore
             // 
             this.cmdMore.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdMore.Location = new System.Drawing.Point(736, 392);
+            this.cmdMore.Location = new System.Drawing.Point(761, 440);
             this.cmdMore.Name = "cmdMore";
-            this.cmdMore.Size = new System.Drawing.Size(124, 40);
+            this.cmdMore.Size = new System.Drawing.Size(181, 56);
             this.cmdMore.TabIndex = 21;
             this.cmdMore.Text = "More...";
             this.cmdMore.UseVisualStyleBackColor = true;
@@ -274,7 +276,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1051, 504);
+            this.ClientSize = new System.Drawing.Size(1153, 537);
             this.Controls.Add(this.cmdMore);
             this.Controls.Add(this.cmdCancel);
             this.Controls.Add(this.cmdHelp);

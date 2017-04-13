@@ -48,16 +48,16 @@
             this.groupBoxBankTransfers.Controls.Add(this.comboBoxBankTransfers);
             this.groupBoxBankTransfers.Location = new System.Drawing.Point(9, 6);
             this.groupBoxBankTransfers.Name = "groupBoxBankTransfers";
-            this.groupBoxBankTransfers.Size = new System.Drawing.Size(497, 242);
+            this.groupBoxBankTransfers.Size = new System.Drawing.Size(799, 368);
             this.groupBoxBankTransfers.TabIndex = 0;
             this.groupBoxBankTransfers.TabStop = false;
             this.groupBoxBankTransfers.Text = "Pre-Defiend Transfers";
             // 
             // cmdGetAudit
             // 
-            this.cmdGetAudit.Location = new System.Drawing.Point(307, 188);
+            this.cmdGetAudit.Location = new System.Drawing.Point(340, 307);
             this.cmdGetAudit.Name = "cmdGetAudit";
-            this.cmdGetAudit.Size = new System.Drawing.Size(177, 34);
+            this.cmdGetAudit.Size = new System.Drawing.Size(163, 41);
             this.cmdGetAudit.TabIndex = 3;
             this.cmdGetAudit.Text = "Get Audit";
             this.cmdGetAudit.UseVisualStyleBackColor = true;
@@ -65,18 +65,18 @@
             // 
             // cmdBankClear
             // 
-            this.cmdBankClear.Location = new System.Drawing.Point(183, 188);
+            this.cmdBankClear.Location = new System.Drawing.Point(209, 307);
             this.cmdBankClear.Name = "cmdBankClear";
-            this.cmdBankClear.Size = new System.Drawing.Size(177, 34);
+            this.cmdBankClear.Size = new System.Drawing.Size(113, 41);
             this.cmdBankClear.TabIndex = 2;
             this.cmdBankClear.Text = "Clear";
             this.cmdBankClear.UseVisualStyleBackColor = true;
             // 
             // cmdBankTransfer
             // 
-            this.cmdBankTransfer.Location = new System.Drawing.Point(0, 188);
+            this.cmdBankTransfer.Location = new System.Drawing.Point(12, 307);
             this.cmdBankTransfer.Name = "cmdBankTransfer";
-            this.cmdBankTransfer.Size = new System.Drawing.Size(177, 34);
+            this.cmdBankTransfer.Size = new System.Drawing.Size(179, 41);
             this.cmdBankTransfer.TabIndex = 1;
             this.cmdBankTransfer.Text = "Excecute";
             this.cmdBankTransfer.UseVisualStyleBackColor = true;
@@ -86,9 +86,9 @@
             // 
             this.comboBoxBankTransfers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxBankTransfers.FormattingEnabled = true;
-            this.comboBoxBankTransfers.Location = new System.Drawing.Point(8, 38);
+            this.comboBoxBankTransfers.Location = new System.Drawing.Point(11, 51);
             this.comboBoxBankTransfers.Name = "comboBoxBankTransfers";
-            this.comboBoxBankTransfers.Size = new System.Drawing.Size(476, 39);
+            this.comboBoxBankTransfers.Size = new System.Drawing.Size(770, 39);
             this.comboBoxBankTransfers.TabIndex = 0;
             this.comboBoxBankTransfers.SelectedIndexChanged += new System.EventHandler(this.comboBoxBankTransfers_SelectedIndexChanged);
             this.comboBoxBankTransfers.Click += new System.EventHandler(this.comboBoxBankTransfers_Click);
@@ -96,7 +96,7 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(11, 251);
+            this.lblStatus.Location = new System.Drawing.Point(15, 405);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(119, 32);
             this.lblStatus.TabIndex = 1;
@@ -104,9 +104,9 @@
             // 
             // cmdCancel
             // 
-            this.cmdCancel.Location = new System.Drawing.Point(549, 120);
+            this.cmdCancel.Location = new System.Drawing.Point(899, 320);
             this.cmdCancel.Name = "cmdCancel";
-            this.cmdCancel.Size = new System.Drawing.Size(152, 52);
+            this.cmdCancel.Size = new System.Drawing.Size(148, 50);
             this.cmdCancel.TabIndex = 3;
             this.cmdCancel.Text = "Cancel";
             this.cmdCancel.UseVisualStyleBackColor = true;
@@ -114,9 +114,9 @@
             // 
             // cmdHelp
             // 
-            this.cmdHelp.Location = new System.Drawing.Point(549, 79);
+            this.cmdHelp.Location = new System.Drawing.Point(899, 264);
             this.cmdHelp.Name = "cmdHelp";
-            this.cmdHelp.Size = new System.Drawing.Size(152, 52);
+            this.cmdHelp.Size = new System.Drawing.Size(148, 50);
             this.cmdHelp.TabIndex = 4;
             this.cmdHelp.Text = "Help";
             this.cmdHelp.UseVisualStyleBackColor = true;
@@ -124,9 +124,9 @@
             // 
             // cmdBack
             // 
-            this.cmdBack.Location = new System.Drawing.Point(549, 35);
+            this.cmdBack.Location = new System.Drawing.Point(899, 206);
             this.cmdBack.Name = "cmdBack";
-            this.cmdBack.Size = new System.Drawing.Size(152, 52);
+            this.cmdBack.Size = new System.Drawing.Size(148, 50);
             this.cmdBack.TabIndex = 5;
             this.cmdBack.Text = "Back";
             this.cmdBack.UseVisualStyleBackColor = true;
@@ -136,7 +136,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 372);
+            this.ClientSize = new System.Drawing.Size(1124, 540);
             this.Controls.Add(this.cmdBack);
             this.Controls.Add(this.cmdHelp);
             this.Controls.Add(this.cmdCancel);

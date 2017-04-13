@@ -44,14 +44,10 @@ namespace FileXpressSOAP
         {
             bank = admin.retrieveAllTransfersFromBank(token);
             int bankNum = comboBoxBankTransfers.SelectedIndex;
-            string retval = admin.submitTransferToServer(bank[bankNum], token);
-            //retval.Replace("\n", "\r\n");
-            //***lblStatus.Text = retval;
-            //lblStatus.Text = "A really long ugly message with many many many linefeeds and then more linefeeds\r\nFoobar Rules";
-            //comboBoxBankTransfers.
+            this.lblStatus.Text = admin.submitTransferToServer(bank[bankNum], token);
+
         }
-        
-        //Get all the Platform Server transfers defined in the bank of transfers and load them into combobox
+
         private void comboBoxBankTransfers_Click(object sender, EventArgs e)
         {
             comboBoxBankTransfers.Items.Clear();
@@ -80,7 +76,6 @@ namespace FileXpressSOAP
             //admin.submitTransferToServer(bank[1], token);            
             }
 
-        //Close the form
         private void cmdCancel_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -89,27 +84,18 @@ namespace FileXpressSOAP
             
         }
 
+        //Stub
         private void comboBoxBankTransfers_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //int bankNum = comboBoxBankTransfers.SelectedIndex;
-            //string retval = admin.submitTransferToServer(bank[bankNum], token);
+
         }
 
-        //Platform Server intiated transfers are called bank transfers in API
-        //This method submits the selected transfer to be executed.
         private void cmdBankTransfer_Click_1(object sender, EventArgs e)
         {
             int bankNum = comboBoxBankTransfers.SelectedIndex;
-            string retval = admin.submitTransferToServer(bank[bankNum], token);
-            this.lblStatus.Text = retval;
-            //string[] message = retval.Split(' ');
-            //FXCC.AuditBase audit = admin.getAudit(message[2], token);
-            //this.lblStatus.Text = retval;
-
-
+            this.lblStatus.Text = admin.submitTransferToServer(bank[bankNum], token);        
         }
 
-        //Get the audit message of the last transfer sumbitted.
         private void cmdGetAudit_Click(object sender, EventArgs e)
         {
             string[] message = this.lblStatus.Text.Split(' ');
